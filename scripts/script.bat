@@ -1,0 +1,1 @@
+shudown -t 20 -r
