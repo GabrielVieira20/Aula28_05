@@ -1,0 +1,21 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	dominio34.com.br. root.dominio34.com.br. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	servidor1.dominio34.com.br.
+@	IN	A	192.168.34.10
+;@	IN	AAAA	::1
+servidor1	IN	A	192.168.34.10
+dns1	IN	CNAME	servidor1.dominio34.com.br.
+dns2	IN	A	192.168.34.20
+cliente	IN	A	192.168.34.30
+www	IN	A	192.168.34.10
+dns	IN	A	192.168.34.10
+ftp	IN	A	192.168.34.10
